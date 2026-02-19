@@ -1,44 +1,26 @@
 
-# 📈 Real-Time Stock Market Data Scraper & Tracker
+# 🔄 Web Data Extraction to Excel
 
-An automated tool to fetch, analyze, and visualize real-time stock market data using the Yahoo Finance API (`yfinance`).
+An automation tool that visits financial websites, copies specific data points (stock prices), and saves them into a structured file (CSV/Excel).
 
 ## 🚀 Overview
-This script automates the process of retrieving historical stock data for major tech companies (AAPL, GOOGL, MSFT, AMZN). It saves the raw data for further analysis and generates trend visualizations.
+Manual data entry from websites is slow and prone to errors. This tool:
+- **Visits Websites**: Automatically connects to Yahoo Finance.
+- **Extracts Data**: Copies stock prices for Apple, Google, Microsoft, Amazon.
+- **Saves to File**: Paste the data into a clean CSV file ready for Excel.
 
 ## 🔑 Key Features
-- **Automated Data Retrieval**: Fetches 1 year of historical data for multiple tickers.
-- **Data Storage**: Saves daily OHLCV (Open, High, Low, Close, Volume) data to CSV files.
-- **Trend Visualization**: Automatically generates and saves closing price trend charts.
-- **Error Handling**: Robust error handling for network issues or invalid tickers.
+- **Zero Manual Copy-Pasting**: 100% automated collection.
+- **High Accuracy**: Computers don't make typos when copying numbers.
+- **Time Saving**: Collects 1 year of data in seconds.
 
-## 🛠️ Tech Stack
-- **Python 3.x**
-- **yfinance** (Yahoo Finance API Wrapper)
-- **Pandas** (Data Management)
-- **Matplotlib** (Visualization)
-
-## 📦 Installation
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/sololeveling-01/stock-market-scraper.git
-    cd stock-market-scraper
-    ```
-2.  Install dependencies:
-    ```bash
-    pip install yfinance pandas matplotlib
-    ```
+## 🛠️ Skills Demonstrated
+- **Web Research**: Converting online information into local files.
+- **File Organization**: Naming and saving files systematically.
+- **Automation**: Using Python to do repetitive tasks.
 
 ## 🏃‍♂️ Usage
-Run the scraper:
 ```bash
 python stock_scraper.py
 ```
-This will:
-1.  Download data for AAPL, GOOGL, MSFT, AMZN.
-2.  Save `[TICKER]_stock_data.csv` files.
-3.  Generate `[TICKER]_price_trend.png` charts.
-
-## 📝 Future Improvements
-- Add technical indicators (RSI, MACD).
-- Implement a simple email alert system for price thresholds.
+Check the folder for `AAPL_stock_data.csv` after running!
