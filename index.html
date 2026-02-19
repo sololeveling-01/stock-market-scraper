@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Stock Market Data Scraper</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1565c0;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .data-table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .data-table th,
+        .data-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .data-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📈 Live Stock Scraper output</h1>
+    <p>Automated Python Script (yfinance & APIs)</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Apple (AAPL) Trend</h3>
+            <img src="AAPL_price_trend.png" alt="AAPL Trend">
+        </div>
+        <div class="card">
+            <h3>Google (GOOGL) Trend</h3>
+            <img src="GOOGL_price_trend.png" alt="GOOGL Trend">
+        </div>
+        <!-- Add more if generated -->
+    </div>
+
+    <h3>Latest Extracted Data (CSV Preview)</h3>
+    <table class="data-table">
+        <tr>
+            <th>Date</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Volume</th>
+        </tr>
+        <tr>
+            <td>2023-12-29</td>
+            <td>193.90</td>
+            <td>194.40</td>
+            <td>191.73</td>
+            <td>192.53</td>
+            <td>42628800</td>
+        </tr>
+        <tr>
+            <td>2023-12-28</td>
+            <td>194.14</td>
+            <td>194.66</td>
+            <td>193.17</td>
+            <td>193.58</td>
+            <td>34049900</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="text-align: center; color: gray;">... (Full data in CSV) ...</td>
+        </tr>
+    </table>
+</body>
+
+</html>
